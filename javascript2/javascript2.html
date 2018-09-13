@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <script>
+
+            function Person(fname,lname){
+                this.firstName = fname;
+                this.lastName = lname;
+            }
+
+            Person.prototype.isempty = function(name){
+                if(name == " " || name == null){
+                    return true;
+                }
+                if(name){
+                    return false;
+                }
+            }
+            
+            let x = new Person("John","Miller");
+            document.write(x.isempty(" "));
+
+        </script>
+    </body>
+</html>

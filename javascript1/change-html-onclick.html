@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="para">Click on the button to change text of paragraph.</p>
+        <button id="btn">Click</button>
+
+        <script>
+
+            let para = document.getElementById("para");
+            let btn  = document.getElementById("btn");
+            
+            btn.addEventListener("click",function(){
+                para.innerHTML = "<h1>Text Changed</h1>";
+            });
+            
+        </script>
+    </body>
+</html>
